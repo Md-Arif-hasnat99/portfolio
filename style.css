@@ -10,6 +10,8 @@
 
 body {
   padding: 0 10%;
+  transition: 0.3s;
+ background-color: black;
 }
 #hero {
   height: 100vh;
@@ -22,6 +24,7 @@ header {
   animation: topIn 1.4s ease-in-out forwards;
   opacity: 0;
   animation-delay: 0.2s;
+   ;
 }
 .header-logo {
   font-size: 32px;
@@ -298,5 +301,14 @@ body.dark-theme {
   }
   .hero-img {
     display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content h1 {
+    font-size: 4rem;
+  }
+  .content h3 {
+    font-size: 2rem;
   }
 }
